@@ -8,7 +8,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 export default function App() {
   return (
-    <Home/>
-    
+    <Home />
+    // <BrowserRouter>
+    //     <Routes>
+    //       <Route path="/" element={Home()}/>
+    //       <Route path="/login" element={SignIn()}/>
+    //       <Route path="/signup" element={SignUp()}/>
+    //     </Routes>
+    //   </BrowserRouter>
   );
 }
