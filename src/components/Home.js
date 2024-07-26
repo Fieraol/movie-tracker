@@ -15,6 +15,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import AppAppBar from './AppAppBar';
 
 function Copyright() {
   return (
@@ -38,14 +39,16 @@ export default function Home() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
-      <AppBar position="relative">
+      <AppAppBar/>
+      {/* <AppBar position="relative">
         <Toolbar>
-          {/* <CameraIcon sx={{ mr: 2 }} /> */}
+          <CameraIcon sx={{ mr: 2 }} />
           <Typography variant="h6" color="inherit" noWrap>
             Movie Tracker layout
           </Typography>
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
+      
       <main>
         {/* Hero unit */}
         <Box
